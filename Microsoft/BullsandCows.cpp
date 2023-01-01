@@ -5,7 +5,9 @@ SOLUTION ALGORITHM:
 2. Also count the frequency of each non-matching char in "secret" string in an array say "dig".
 3. traverse the "guess" string again and for each non matching position having positive frequency 
    in dig array, decrease its frequency by one and increase count of "cows" by one
-*/class Solution {
+   
+*/
+class Solution {
 public:
     string getHint(string s, string t) {
         vector<int> dig(10,0);
